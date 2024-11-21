@@ -72,6 +72,7 @@ form {
     font-size: 15px;
     width: 300px;
     height: 30px;
+    font-family: poppins;
 }
 
 .input-wrapper input::placeholder {
@@ -96,6 +97,11 @@ form {
     font-weight: 400;
 }
 
+.forgot-pass:hover {
+    text-decoration: underline;
+    color: #d1d1d1;
+}
+
 .login-btn {
     width: 100px;
     height: 40px;
@@ -107,6 +113,12 @@ form {
     font-weight: 800;
     margin: 0 auto;
     margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #d1d1d1;
 }
 
 .other-login h2 {
@@ -121,7 +133,6 @@ form {
 
 .google-login, .phone-login, .id-login {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: #fff;
@@ -130,6 +141,9 @@ form {
     height: 30px;
     font-size: 13px;
     font-weight: 400;
+    padding-left: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .google-login {
@@ -140,26 +154,65 @@ form {
     margin-top: 10px;
 }
 
+.google-login:hover,
+.phone-login:hover,
+.id-login:hover {
+    background-color: #d1d1d1;
+}
+
 .policy-section {
     display: flex;
-    gap: 40px;
-    margin-top: 15px;
+    gap: 50px;
+    margin-top: 22px;
 }
 
 .privacy-policy, .service-policy, .cookie-policy {
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    transition: 0.3s ease;
+}
+
+.privacy-policy:hover, 
+.service-policy:hover, 
+.cookie-policy:hover {
+    text-decoration: underline;
+    color: #d1d1d1;
 }
 
 .signup-section {
     background-color: #fff;
     border-radius: 20px;
+    width: 250px;
 }
 
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.pipihub-logo {
+    width: 50px;
+    margin-top: 20px;
+}
 
+.heading-text {
+    font-size: 16px;
+    color: #323232;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
 
+.heading-text span {
+    font-size: 24px;
+}
+
+.man-img {
+    width: 56px;
+    margin-top: 25px;
+}
 
 
 .dropdown {
